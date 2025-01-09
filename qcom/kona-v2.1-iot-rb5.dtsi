@@ -58,6 +58,18 @@
 	/delete-property/ qcom,dsi-pll-ssc-en;
 };
 
+&mdss_mdp {
+	connectors = <&sde_dp &sde_dsi &sde_dsi1 &sde_rscc>;
+};
+
+&mdss_dsi0_pll {
+	/delete-property/ qcom,dsi-pll-ssc-en;
+};
+
+&mdss_dsi1_pll {
+	/delete-property/ qcom,dsi-pll-ssc-en;
+};
+
 &lt9611_pins {
 	mux {
 		pins = "gpio63";
